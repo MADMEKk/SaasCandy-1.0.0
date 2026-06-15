@@ -1,0 +1,122 @@
+/* LogoFlux Custom Premium Styling */
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Image styling updates */
+.hero-banner img, 
+.our-service img {
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hero-banner img:hover,
+.our-service img:hover {
+  transform: translateY(-5px);
+}
+
+/* Navbar adjustments */
+.main-header.sticky {
+  background-color: rgba(6, 20, 52, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+/* Card interactions */
+.service .card,
+.pricing .card {
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid rgba(22, 66, 185, 0.05);
+}
+
+.service .card:hover,
+.pricing .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(22, 66, 185, 0.1) !important;
+}
+
+/* Custom list items inside pricing and features */
+.custom-check-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.custom-check-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #14141c;
+}
+
+.custom-check-list li i {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  color: #EE7B11; /* warning theme color */
+}
+
+/* Premium ribbon badge */
+.pricing .badge.bg-warning {
+  top: 15px;
+  right: 15px;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 30px;
+}
+
+/* Video wrapper enhancements */
+.portfolio-video-wrap {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+  position: relative;
+  background-color: #000;
+}
+
+.portfolio-video-wrap iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+/* Contact form improvements */
+.contact form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 24px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact .form-control {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 12px;
+  padding: 14px 20px;
+  transition: all 0.3s ease;
+}
+
+.contact .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.contact .form-control:focus {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: #EE7B11 !important;
+  box-shadow: 0 0 0 3px rgba(238, 123, 17, 0.25);
+}
+
+.contact .form-label {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
