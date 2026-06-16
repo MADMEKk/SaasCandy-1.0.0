@@ -318,3 +318,72 @@ body {
   background-color: #000000 !important;
   color: #ffffff !important;
 }
+
+/* Pricing Section Custom Template Styling */
+.pkg-root {
+  --font-sans: "Manrope", sans-serif;
+  --color-border-secondary: #efefef;
+  --color-border-tertiary: #efefef;
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f9f9fb;
+  --color-text-primary: #000000;
+  --color-text-secondary: #7a8496;
+  --color-text-warning: #EE7B11;
+  --color-border-info: #000000;
+  --color-background-info: #efefef;
+  --color-text-info: #000000;
+  --border-radius-md: 10px;
+  --border-radius-lg: 15px;
+
+  padding: 1.5rem 0;
+  font-family: var(--font-sans);
+}
+.tab-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 2rem; }
+.tab-btn {
+  padding: 8px 18px; font-size: 13px; font-weight: 500;
+  border: 0.5px solid var(--color-border-secondary);
+  border-radius: var(--border-radius-md);
+  background: var(--color-background-primary);
+  color: var(--color-text-secondary);
+  cursor: pointer; transition: all .15s;
+}
+.tab-btn:hover { background: var(--color-background-secondary); color: var(--color-text-primary); }
+.tab-btn.active {
+  background: #1a1a1a; color: #fff; border-color: #1a1a1a;
+}
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; }
+.card {
+  background: var(--color-background-primary);
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  padding: 1.25rem 1rem 1rem;
+  display: flex; flex-direction: column; gap: 10px;
+  position: relative;
+}
+.card.popular {
+  border: 2px solid var(--color-border-info);
+}
+.popular-badge {
+  position: absolute; top: -10px; left: 50%; transform: translateX(-50%);
+  background: var(--color-background-info); color: var(--color-text-info);
+  font-size: 10px; font-weight: 500; padding: 2px 10px;
+  border-radius: var(--border-radius-md); white-space: nowrap;
+}
+.tier-label { font-size: 11px; color: var(--color-text-warning); font-weight: 500; text-align: center; }
+.price { text-align: center; }
+.price .amount { font-size: 28px; font-weight: 500; color: var(--color-text-primary); }
+.price .currency { font-size: 13px; color: var(--color-text-secondary); vertical-align: super; }
+.plan-name { font-size: 13px; font-weight: 500; text-align: center; color: var(--color-text-secondary); }
+.plan-desc { font-size: 11px; color: var(--color-text-secondary); text-align: center; line-height: 1.5; }
+.features { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.features li { font-size: 12px; color: var(--color-text-secondary); display: flex; align-items: flex-start; gap: 6px; }
+.features li i { color: #f59e0b; font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+.card-btn {
+  display: block; text-align: center; padding: 7px;
+  background: #f59e0b; color: #1a1a1a; font-size: 12px; font-weight: 500;
+  border-radius: var(--border-radius-md); text-decoration: none;
+  margin-top: auto; border: none; cursor: pointer; transition: opacity .15s;
+}
+.card-btn:hover { opacity: .85; }
+.panel { display: none; }
+.panel.active { display: block; }
